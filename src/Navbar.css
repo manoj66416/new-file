@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(20, 19, 19, 0.786);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+  height: 13vh;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+}
+.nav-menu h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: white;
+}
+.nav-links {
+  text-decoration: none;
+  color: rgba(239, 223, 223, 0.751);
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 0.7rem;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.homes,
+.abouts,
+.a4s,
+.logins {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 10vw;
+  color: white;
+  font-size: 17px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.homes:hover,
+.abouts:hover,
+.a4s:hover {
+  background-color: aqua;
+  color: white;
+  height: 5vh;
+  margin-top: 2.1vh;
+  border-radius: 15px;
+  transition: all ease-in-out 0.2s;
+}
+.nav-listss i {
+  padding-right: 10px;
+  flex-wrap: wrap;
+}
+.nav-listss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logins {
+  border-radius: 10px;
+  height: 5vh;
+  background-color: white;
+  font: 3rem;
+  gap: 10px;
+  margin-top: 2.1vh;
+  color: black;
+  font-weight: 550;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.right {
+  height: 2vh;
+  color: rgb(139, 181, 139);
+}
+.logins:hover,
+.right:hover {
+  background-color: black;
+  color: white;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+@media (max-width: 850px) {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+  .nav-listss {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 780px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: white;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .s {
+    background-color: white;
+  }
+  .homes a {
+    padding-right: 1rem;
+  }
+  .homes,
+  .abouts,
+  .contacts,
+  .a4s {
+    color: black;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    gap: 1rem;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    background-color: transparent;
+  }
+  .logins {
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+}
